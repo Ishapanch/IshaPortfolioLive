@@ -1,78 +1,104 @@
-import React from 'react';
-import './Header.css';
-
+import React from "react";
+import "./Header.css";
+import logo from "../assets/logo/isha-logo.png";
 
 export default function Header() {
   return (
-    <div>
-      <nav class="navbar navbar-expand-md bg-body-tertiary">
-  <div class="container-xl">
-    <a class="navbar-brand" href="#">
-      <img src="./../assets/isha-logo.png" alt="" />
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Another Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Another Link</a>
-        </li>
-      </ul>
-      <div class="search-and-icons">
-        <form class="d-flex mb-2 me-2" role="search">
-          <input class="form-control me-2" type="search" aria-label="Search" />
-        </form>
-        <div class="user-icons d-flex mb-2">
-          <div class="profile"><i class="bi bi-person"></i></div>
-          <div class="wishlist"><i class="bi bi-heart"></i></div>
-          <div class="cart"><i class="bi bi-cart3"></i></div>
+    <nav className="navbar navbar-expand-lg navbar-light navbar-portfolio w-100">
+      <div className="container-fluid padding-header w-100">
+        <div className="row w-100 align-items-center">
+          <div className="col-lg-3 col-4 d-block">
+            <a className="navbar-brand" href="#">
+              <img
+                src={logo}
+                alt=""
+                className="d-inline-block align-text-top header-logo"
+              />
+            </a>
+          </div>
+          <div className="col-8 d-lg-none d-block">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div className="col-lg-9 col-9 d-block">
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="/">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/">
+                    Resume
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/">
+                    Portfolio
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        {/* <a className="navbar-brand" href="#">
+          <img
+            src={logo}
+            alt=""
+            className="d-inline-block align-text-top header-logo"
+          />
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/">
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/">
+                Resume
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/">
+                Portfolio
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div> */}
       </div>
-      <div class="contact-info d-md-flex">
-        <p>+0987654321 | +1234567890 </p>
-        <p><a href="mailto:">contact@domainname.com</a></p>
-      </div>
-    </div>
-  </div>
-</nav>
-
-
-    </div>
-  )
+    </nav>
+  );
 }

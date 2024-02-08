@@ -1,11 +1,16 @@
-.navbar {
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-  }
+.padding-header{
+  padding: 0 50px;
+}
+
+.navbar-portfolio{
+  background-color: transparent;
+  position: absolute;
+}
   .navbar .navbar-brand img {
     max-width: 100px;
   }
   .navbar .navbar-nav .nav-link {
-    color: #000;
+    color: #fff;
   }
   @media screen and (min-width: 1024px) {
     .navbar {
@@ -23,7 +28,7 @@
   }
   @media screen and (min-width: 768px) {
     .navbar .navbar-brand img {
-      max-width: 7em;
+      max-width: 100px;
     }
     .navbar .navbar-collapse {
       display: flex;
@@ -58,4 +63,3 @@
   .contact-info a {
     padding-right: 0;
   }
-  
