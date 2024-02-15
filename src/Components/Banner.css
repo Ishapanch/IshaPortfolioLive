@@ -137,3 +137,13 @@ height: 100vh;
     font-size: 23px;
     line-height: 100%;
 }
+
+.links{
+   text-decoration: none;
+   color: #fff;
+   padding: 10px 10px;
+}
+
+.links i{
+    font-size: 20px;;
+}

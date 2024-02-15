@@ -28,16 +28,15 @@ export default function Banner() {
       <div className="fixed-wrapper">
       <div className="fixed-block block-left">
         <ul className="list-unstyled languages-list">
-          <li><a href="#0"><span className="single-language">ENG</span></a></li>
-          <li><a href="#0"><span className="single-language">JAP</span></a></li>
+          <li><a className="links" href="#0"><span className="single-language">ENG</span></a></li>
         </ul>
       </div>
       <div className="fixed-block block-right">
         <ul className="list-unstyled social-icons">
-          <li><a href="#0"><i className="fab fa-twitter"></i></a></li>          
-          <li><a href="#0"><i className="fab fa-linkedin"></i></a></li>
-          <li><a href="#0"><i className="fab fa-github"></i></a></li>
-          <li><a href="#0"><i className="fab fa-instagram"></i></a></li>
+          <li><a className="links" href="#0"><i className="fab fa-twitter"></i></a></li>          
+          <li><a className="links" href="#0"><i className="fab fa-linkedin"></i></a></li>
+          <li><a className="links" href="#0"><i className="fab fa-github"></i></a></li>
+          <li><a className="links" href="#0"><i className="fab fa-instagram"></i></a></li>
         </ul>
       </div>
     </div>

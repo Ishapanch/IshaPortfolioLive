@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from 'react-router-dom'; // Corrected import statement
 import "./Header.css";
 import logo from "../assets/logo/isha-logo.png";
+import AboutPage from "./AboutPage";
+
 
 export default function Header() {
   return (
@@ -8,13 +11,13 @@ export default function Header() {
       <div className="container-fluid padding-header w-100">
         <div className="row w-100 align-items-center">
           <div className="col-lg-3 col-4 d-block">
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" to="/">
               <img
                 src={logo}
                 alt=""
                 className="d-inline-block align-text-top header-logo"
               />
-            </a>
+            </Link>
           </div>
           <div className="col-8 d-lg-none d-block">
             <button
@@ -31,11 +34,12 @@ export default function Header() {
           </div>
           <div className="col-lg-9 col-9 d-block">
             <div className="collapse navbar-collapse" id="navbarNav">
+              
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <Link className="nav-link active" aria-current="page" to="/about">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/">
@@ -52,7 +56,8 @@ export default function Header() {
                     Contact
                   </a>
                 </li>
-              </ul>
+              </ul>              
+              
             </div>
           </div>
         </div>
@@ -101,4 +106,4 @@ export default function Header() {
       </div>
     </nav>
   );
-}
+};
