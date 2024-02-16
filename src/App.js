@@ -1,29 +1,21 @@
 
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'; 
+import { BrowserRouter , Route, Routes } from 'react-router-dom'; 
 import './App.css';
 import Header from './Components/Header';
-import Banner from './Components/Banner';
 import AboutPage from './Components/AboutPage';
 import Homepage from './Homepage';
 
 function App() {
   return (
-    <Router> 
-    <div>
+    <BrowserRouter> 
     
         <Header/>
-        <Homepage/>
-        <Switch>
-          <Route path="/about">
-            <AboutPage />
-          </Route>
-          <Route path="/">
-          <Homepage/>
-          </Route>
-        </Switch>
-        
-    </div>
-      </Router>
+        <Routes>
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/" element={<Homepage />} />
+        </Routes>
+    
+      </BrowserRouter>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom'; // Corrected import statement
+import { Link , Outlet} from 'react-router-dom';
 import "./Header.css";
 import logo from "../assets/logo/isha-logo.png";
 import AboutPage from "./AboutPage";
@@ -7,6 +7,7 @@ import AboutPage from "./AboutPage";
 
 export default function Header() {
   return (
+    <>
     <nav className="navbar navbar-expand-lg navbar-light navbar-portfolio w-100">
       <div className="container-fluid padding-header w-100">
         <div className="row w-100 align-items-center">
@@ -105,5 +106,7 @@ export default function Header() {
         </div> */}
       </div>
     </nav>
+      {/* <Outlet /> */}
+      </>
   );
 };
