@@ -1,6 +1,8 @@
 import React from 'react'
 import AboutImg from '../assets/isha-about.png'
 import './AboutPage.css'
+import Testimonial from '../Components/Testimonial';
+import './Testimonial.css'
 
 export default function AboutPage() {
 
@@ -38,6 +40,8 @@ export default function AboutPage() {
         </div>
       </div>
       </div>
+      <Testimonial></Testimonial>
     </div>
+    
   );
 }
