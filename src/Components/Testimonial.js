@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Carousel} from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import test1 from '../assets/isha-about.png'
-import test2 from '../assets/logo/isha-logo.png'
+import test1 from '../assets/dummy.jpg'
 
 export default class Testimonial extends Component {
   render() {
@@ -10,6 +9,10 @@ export default class Testimonial extends Component {
         <section className='testimonial'>
             <div className="container">
             <div className='row'>
+            <div className="col-lg-12 col-12 text-center">
+            <div class="grey-title">Services i offer to my clients</div>
+            <h3 class="heading">My Services</h3>
+            </div>
             <div className="col-lg-12">
             <Carousel
         showArrows={true}
@@ -20,13 +23,12 @@ export default class Testimonial extends Component {
         interval={6100}
       >
         <div>
-          <img src={test2}  />
+          <img src={test1}  />
           <div className="myCarousel">
-            <h3>Shirley Fultz</h3>
+            <h3>Niraj Pancholi</h3>
             <h4>Designer</h4>
             <p>
-              It's freeing to be able to catch up on customized news and not be
-              distracted by a social media element on the same site
+            Isha did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.
             </p>
           </div>
         </div>
@@ -34,23 +36,21 @@ export default class Testimonial extends Component {
         <div>
           <img src={test1} />
           <div className="myCarousel">
-            <h3>Daniel Keystone</h3>
+            <h3>Dhara Pancholi</h3>
             <h4>Designer</h4>
             <p>
-              The simple and intuitive design makes it easy for me use. I highly
-              recommend Fetch to my peers.
+            Isha did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.
             </p>
           </div>
         </div>
 
         <div>
-          <img src={test2}  />
+          <img src={test1}  />
           <div className="myCarousel">
-            <h3>Theo Sorel</h3>
+            <h3>Nehal Pancholi</h3>
             <h4>Designer</h4>
             <p>
-              I enjoy catching up with Fetch on my laptop, or on my phone when
-              I'm on the go!
+            Isha did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.
             </p>
           </div>
         </div>
