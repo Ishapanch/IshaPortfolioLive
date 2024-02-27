@@ -21,3 +21,13 @@
   .gallery-thumbnail:hover {
     border-color: #888;
   }
+
+  .padding-port{
+    padding: 20px 0;
+  }
+
+  figure{
+    width: 25%;
+    display: inline-block;
+    margin: 10px !important;
+  }
