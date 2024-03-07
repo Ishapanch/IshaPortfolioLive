@@ -1,0 +1,48 @@
+.no-list{
+    list-style: none;
+}
+
+.no-list.details-my {
+    list-style: none;
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-sec .form-grp{
+    background-color: #eee;
+    border: none;
+    border-bottom: 1px solid #1d1d1d;
+    border-radius: 0;
+    font-size: 15px;
+    padding: 15px;
+    color: #777;
+
+}
+.contact-sec .form-grp:focus{
+    box-shadow: none;
+}
+.contact-sec .form-grp option{
+    background-color: #1d1d1d;
+    border: none;
+    border-bottom: 1px solid #1d1d1d;
+    border-radius: 0;
+    font-size: 15px;
+    height: 44px;
+    padding: 20px 14px;
+    color: #777;
+
+}
+.contact-sec .form-radio-btn{
+    font-size: 15px;
+    height: 44px;
+    padding: 9px 14px;
+    color: #777;
+}
+.contact-sec .radio-btn{
+    display: flex;
+}
+.contact-sec .form-label{
+    color: #009e66;
+    font-weight: 600;
+}
