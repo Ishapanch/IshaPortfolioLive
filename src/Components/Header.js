@@ -11,7 +11,7 @@ export default function Header() {
         <div className="container-fluid padding-header w-100">
           <div className="row w-100 align-items-center">
             <div className="col-lg-3 col-4 d-block">
-              <Link className="navbar-brand" to="/">
+              <Link className="navbar-brand" aria-current="page" to="/home">
                 <img
                   src={logo}
                   alt=""
