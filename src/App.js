@@ -7,6 +7,7 @@ import Homepage from './Homepage';
 import Portfolio from './Components/Portfolio';
 import Contact from './Components/Contact';
 import Pdf from './Components/Pdf';
+import Inquiry from './Components/Inquiry';
 
 function App() {
   return (
@@ -21,7 +22,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={Pdf}/>
         </Routes>
-        <Homepage />
 
       </BrowserRouter>
   );
